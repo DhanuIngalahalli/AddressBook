@@ -6,8 +6,12 @@ namespace Address_book
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Address Book program");
+            //Title Of the Program
+            Console.WriteLine("Welcome to Address Book Program");
+            //Object for the Operations Class
+            Nlog option = new Nlog();
+            option.Add();
+
         }
     }
 }
-
