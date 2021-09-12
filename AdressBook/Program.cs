@@ -41,7 +41,12 @@ namespace Address_book
                         
                         option.Edit(name, first, last, add, cityN, stateN);//to edit contact details
                         break;
-                    
+                    case 4:
+                        Console.WriteLine("Enter First Name To Delete:");
+                        string firstname = Console.ReadLine();
+                        option.Delete(firstname);//to delete contact
+                        break;
+
                     default:
                         Console.WriteLine("End");//default condition
                         defcount++;

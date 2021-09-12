@@ -91,8 +91,21 @@ namespace Address_book
             listcontacts[indexOfContact] = editContact;
 
         }
+        public void Delete(string firstname) //Delete method
+        {
+            int indexOfContact = -1;
+            for (int i = 0; i < listcontacts.Count; i++)
+            {
+                if (listcontacts[i].first_name == firstname)
+                {
+                    indexOfContact = i;
+                }
+            }
+            listcontacts.RemoveAt(indexOfContact);
 
-        
+        }
+
+
 
     }
 
